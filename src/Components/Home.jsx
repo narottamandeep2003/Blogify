@@ -1,9 +1,12 @@
 import React from 'react'
 import "../Style/Home.css"
+import Nav from './Nav';
+import LandingPage from './LandingPage'
 export default function Home() {
-  return (
-    <div>
-      <h1>Temp</h1>
-    </div>
-  )
+    return (
+        <>
+        <Nav></Nav>
+        <LandingPage></LandingPage>
+        </>
+    )
 }
