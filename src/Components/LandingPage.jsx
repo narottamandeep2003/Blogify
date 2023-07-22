@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import Blogs  from "./Blogs"
+import Blogs from "./Blogs"
 export default function LandingPage() {
     const [showleftBtn, setshowleftBtn] = useState(0)
     const [showrightBtn, setshowrightBtn] = useState(1)
