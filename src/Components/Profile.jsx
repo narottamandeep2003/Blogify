@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import Nav from './Nav'
 import Features from './Features';
+import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const [SelectedFeature, SetSelectedFeature] = useState("Saved");
@@ -17,7 +18,8 @@ export default function Profile() {
             <span className='ProfilePageName'>Narotta</span>
             <span className='Intro'>I am a devloper</span>
           </div>
-          <button className='LogOut'>Log out</button>
+          
+          <button className='LogOut'><Link to={"/"}> Log out</Link></button>
         </div>
         <div className="ProfileList">
           <span className={SelectedFeature === "Saved" ? "Profilefeatures ProfilefeaturesTarget" : "Profilefeatures ProfilefeaturesNotTarget"}

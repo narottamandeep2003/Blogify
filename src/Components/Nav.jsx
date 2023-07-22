@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 export default function Nav() {
     const [register, setregister] = useState(1)
     const handleClick = () => {
-        setregister(1);
+        setregister(0);
     }
     return (
         <nav>
@@ -14,10 +14,10 @@ export default function Nav() {
                     <div className='NavRightsideNotRegister'>
                         <ul>
                             <li>
-                                <Link to='/' style={{ color: 'black' }} >Log in</Link>
+                                <Link to='/LogIn' style={{ color: 'black' }} >Log in</Link>
                             </li>
                             <li className='Signup'>
-                                <Link onClick={handleClick} to='/' style={{ color: 'white' }} >Sign up</Link>
+                                <Link  onChange={handleClick}  to='/SignUp' style={{ color: 'white' }} >Sign up</Link>
                             </li>
                         </ul>
                     </div>
