@@ -1,0 +1,239 @@
+.EditScreen {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.EditWindow {
+    margin: 70px;
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    width: 70%;
+    /* border: 1px solid black; */
+}
+
+.EditTitle {
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    /* border: 1px solid rgb(158, 158, 158); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.9rem;
+    overflow: none;
+    display: block;
+    overflow: hidden;
+    font-weight: bold;
+    resize: none;
+    color: rgb(28, 28, 28);
+    border: none;
+
+}
+
+.EditTitle:focus {
+    outline: none;
+    /* border: 1px solid rgb(124, 124, 124); */
+
+}
+
+.EditTitle::placeholder {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.9rem;
+    font-weight: bold;
+    color: rgb(28, 28, 28);
+}
+
+.innerComponent {
+    position: relative;
+}
+
+.titleheading{
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.titleheading::placeholder{
+    font-size: 1.1rem;
+}
+.postdDescription {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-top: 10px;
+    width: 100%;
+}
+
+.AddComponentsBox {
+    height: 50px;
+    display: flex;
+    align-items: center;
+
+}
+
+.AddComponentsBtn {
+
+    margin: 3px 0px;
+    /* margin-right: auto; */
+    color: rgb(170, 170, 170);
+    cursor: pointer;
+    /* background-color: antiquewhite; */
+    width: 35px;
+}
+
+.AddComponentsBtn .bi-plus-circle-fill {
+    width: 35px;
+    height: 35px;
+}
+
+.EditComponents {
+    margin-left: 30px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.AddComponent {
+    cursor: pointer;
+    margin: 0px 8px;
+    transition: all .3s;
+}
+
+.AddComponent:hover {
+    color: green;
+}
+
+.AddComponent svg {
+    width: 18px;
+    height: 18px;
+}
+
+.EditInputDes {
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    /* border: 1px solid rgb(158, 158, 158); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    overflow: none;
+    border: none;
+    display: block;
+    overflow: hidden;
+    resize: none;
+    color: rgb(65, 65, 65);
+    text-align: left;
+}
+
+.EditInputDes:focus {
+    outline: none;
+    /* border: 1px solid rgb(124, 124, 124); */
+
+}
+
+.EditInputDes::placeholder {
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    color: rgb(65, 65, 65);
+    text-align: left;
+}
+
+#fileimg {
+    display: none;
+}
+
+.InputImg {
+    width: 100%;
+}
+
+/* .EditInputDes:focus + .deleteComponent{
+    display: block;
+} */
+.deleteComponent {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    left: -40px;
+    color: red;
+    /* display: none; */
+    transition: all .3s;
+}
+
+.marginB {
+    margin-bottom: 35px;
+}
+
+.EditList {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+}
+
+.EditList ul {
+    /* border: 2px solid black; */
+    width: 100%;
+}
+
+.AddComponentsBtnList {
+
+    color: rgb(79, 79, 79);
+    cursor: pointer;
+    /* background-color: antiquewhite; */
+    width: 35px;
+    height: 35px;
+    margin-top: 3px
+    /* margin-right: auto; */
+}
+.AddComponentsBtnList .bi-plus-circle-fill {
+    width: 20px;
+    height: 20px;
+}
+
+.liInput,.liInput::placeholder{
+    color: black;
+    overflow: none;
+    border: none;
+    display: block;
+    overflow: hidden;
+    resize: none;
+    /* color: rgb(65, 65, 65); */
+    text-align: left;
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.liInput:focus{ 
+    border: none;
+    outline: none;
+    display: block;
+}
+.Ul{
+    position: relative;
+    margin: 5px 0px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+    display: flex;
+}
+
+.Ul .deleteBtnLi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+    color: red;
+    margin-right: 20px;
+    margin-top: 5px;
+}
+.Ul .deleteBtnLi .bi-trash3{
+    width: 12px;
+    height: 12px;
+}
+
+.Ul li{
+    width: 100%;
+}

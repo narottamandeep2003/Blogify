@@ -14,7 +14,7 @@ export default function Login() {
                 </div>
                 <div className="inputBox">
                     <label htmlFor="Password">Password <span><sup>*</sup></span></label>
-                    <input type="password" className='password' id="Password" placeholder='Enter your password'  />
+                    <input type="password" className='password' id="Password" placeholder='Enter your password' />
                 </div>
                 <button className='LoginBtn'>Log in</button>
                 <p className='loginfooter'>Create an account <Link to="/SignUp">sign in</Link></p>

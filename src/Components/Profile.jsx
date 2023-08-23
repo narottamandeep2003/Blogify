@@ -18,7 +18,7 @@ export default function Profile() {
             <span className='ProfilePageName'>Narotta</span>
             <span className='Intro'>I am a devloper</span>
           </div>
-          
+
           <button className='LogOut'><Link to={"/"}> Log out</Link></button>
         </div>
         <div className="ProfileList">
