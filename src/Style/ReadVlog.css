@@ -1,0 +1,144 @@
+.ReadVlog {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.ReadVlogProfile {
+    margin-top: 100px;
+    height: 70px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    display: flex;
+    align-items: center;
+    width: 70%;
+}
+
+.readimgProfile {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.ReadProfileData {
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100%;
+}
+
+.Readdarkcol {
+    cursor: pointer;
+    font-weight: bold;
+    font-size: .9rem;
+    margin: 0;
+    color: rgb(22, 22, 22);
+}
+
+.Readlightcol {
+    cursor: pointer;
+    margin: 0;
+    font-weight: 300;
+    font-size: .8rem;
+    color: rgb(22, 22, 22);
+}
+
+.ReadIcon {
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.Readbookmark .bi-bookmark-check-fill {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.Readbookmarkfollow .bi-person-fill-add {
+    margin-left: 10px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+}
+
+.ReadPost {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+
+.PostText {
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    /* border: 1px solid rgb(158, 158, 158); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.2rem;
+    overflow: none;
+    border: none;
+    display: block;
+    overflow: hidden;
+    resize: none;
+    color: rgb(65, 65, 65);
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.PostTitle {
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    /* border: 1px solid rgb(158, 158, 158); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.9rem;
+    overflow: none;
+    display: block;
+    overflow: hidden;
+    font-weight: bold;
+    resize: none;
+    color: rgb(28, 28, 28);
+    border: none;
+    
+}
+.PostHeading{
+    border-radius: 10px;
+    padding: 5px;
+    width: 100%;
+    /* border: 1px solid rgb(158, 158, 158); */
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.9rem;
+    overflow: none;
+    display: block;
+    overflow: hidden;
+    font-weight: bold;
+    resize: none;
+    color: rgb(28, 28, 28);
+    border: none;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+}
+.PostImg{
+    width: 100%;
+    margin-bottom: 30px;
+}
+.PostUl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px 0px;
+    width: 100%;
+}
+.PostUl li{
+
+    width: 90%;
+}

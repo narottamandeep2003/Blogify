@@ -4,8 +4,10 @@ import InputDescription from './InputDescription';
 import ImgEdit from './ImgEdit';
 import TitleEdit from './TitleEdit';
 import EditList from './EditList';
+import {  useNavigate } from 'react-router-dom';
 
 export default function EditVlog() {
+    const navigate  = useNavigate();
     const [Componentsbtn, setComponentsbtn] = useState(0);
     const count = useRef(1)
     const initialState = {
@@ -125,8 +127,12 @@ export default function EditVlog() {
         setComponentsbtn(!Componentsbtn)
     }
     return (<>
-        <div className='EditScreen' >
+        <div className='EditScreen'>
             <Nav></Nav>
+            <div className="BtnsBox">
+                <button className="btnShow" onClick={() => { navigate ('/ReadVlog', { state: Vlogdata }) }}>Publish</button>
+                <button className="btnSaveEdit">Draft</button>
+            </div>
             <div className="EditWindow">
 
                 <div className="postdDescription">
@@ -191,10 +197,10 @@ export default function EditVlog() {
                                 </div>
                             ) : ""
                         }
-
                     </div>
                 </div>
             </div>
+
         </div>
     </>
 
