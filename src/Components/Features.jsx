@@ -12,7 +12,7 @@ export default function Features(props) {
         case "Following":
             return (
                 <>
-                    <Following></Following>
+                <Following></Following>
                 </>
             )
         case "Post":

@@ -5,10 +5,10 @@ export default function Blogs() {
     return (
         <div>
             <div className="Blogs">
-                <BlogCard></BlogCard>
-                <BlogCard></BlogCard>
-                <BlogCard></BlogCard>
-                <BlogCard></BlogCard>
+                <BlogCard key={1}></BlogCard>
+                <BlogCard key={2}></BlogCard>
+                <BlogCard key={3}></BlogCard>
+                <BlogCard key={4}></BlogCard>
                 <BlogCard></BlogCard>
                 <BlogCard></BlogCard>
                 <BlogCard></BlogCard>

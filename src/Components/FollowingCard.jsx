@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function FollowingCard() {
   return (
-    <div className='FollowingCard'>
+    <div className='ProFollowingCard'>
       <img src="./imgProfile.jpg" alt="" className='FollowingCardImg' />
       <span className='FollowingCardName'>Narotta</span>
       <div className="unfollow">

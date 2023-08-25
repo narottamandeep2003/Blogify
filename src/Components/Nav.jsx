@@ -7,7 +7,7 @@ export default function Nav() {
         setregister(0);
     }
     return (
-        <nav>
+        <nav className='nav'>
             <h2 className='logo'><Link to='/'>Blogify</Link></h2>
             {
                 (!register) ? (

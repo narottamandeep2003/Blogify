@@ -10,6 +10,7 @@ nav {
     align-items: center;
     width: 100vw;
     height: 70px;
+    z-index: 1000;
 }
 
 .logo {
@@ -153,6 +154,7 @@ nav {
 }
 
 .Sticky {
+    position: relative;
     -webkit-user-select: none;
     /* Safari */
     -ms-user-select: none;
@@ -252,11 +254,12 @@ nav {
     user-select: none;
     position: relative;
     display: flex;
-
+    /* background-color: antiquewhite; */
     align-items: center;
     margin: 0px 10px;
     max-width: 500px;
     overflow: hidden;
+    /* border-right:2px solid black; */
 }
 
 
@@ -451,4 +454,53 @@ nav {
 
 .error p a{
     text-decoration: none;
+}
+
+.ExpandTopics{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    z-index: 100;
+}
+.ExpandTopicsList{
+    background-color: rgb(240, 239, 239);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    width: 100%;
+    /* height: 70%; */
+    max-height: 70vh;
+    padding: 10px;
+    border-radius: 10px;
+    /* background-color: aqua; */
+}
+.nav{
+    z-index: 1000;
+}
+.etopics {
+    cursor: pointer;
+    margin: 0px 5px;
+    margin-bottom: 5px;
+    font-size: .9rem;
+    border-radius: 25px;
+    padding: 5px 15px;
+
+}
+.HideExpand{
+    display: flex;
+    cursor: pointer;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    /* background-color: rgb(102, 102, 102); */
+    height: 30px;
+    position: absolute;
+    right:5px;
+    top: 5px;
+    border-radius: 50%;
 }
