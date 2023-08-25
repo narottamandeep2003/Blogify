@@ -24,7 +24,7 @@ export default function BlogCard() {
                         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta inventore esse, dolore unde laboriosam quo nulla optio iusto corrupti illo delectus porro aliquid ...
                     </p>
                     <div className="cardFooter">
-                        <span className='CardTopic Topic'>Dynamic programing</span>
+                        <span className='CardTopic CTopic'>Dynamic programing</span>
                         <div>
                             <div className="CardLike like">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-heart-fill" viewBox="0 0 16 16">
