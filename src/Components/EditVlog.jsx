@@ -144,7 +144,7 @@ export default function EditVlog() {
                             else if (e.type === "img")
                                 return <ImgEdit key={e.key} indexkey={e.key} change={handleChanges} imgBase64={e.imgBase64}></ImgEdit>
                             else if (e.type === "title")
-                                return <TitleEdit key={e.key} indexkey={e.key} change={handleChanges} initialVal={e.dataval} classes="EditTitle mb-3" heading={false}></TitleEdit>
+                                return <TitleEdit key={e.key} indexkey={e.key} change={handleChanges} initialVal={e.dataval} classes="EditTitle mbb-3" heading={false}></TitleEdit>
                             else if (e.type === "heading")
                                 return <TitleEdit key={e.key} indexkey={e.key} change={handleChanges} initialVal={e.dataval} classes="EditTitle mb-2 titleheading" heading={true}></TitleEdit>
                             else if (e.type === "List")

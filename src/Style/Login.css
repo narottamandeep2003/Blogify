@@ -121,3 +121,28 @@
     text-decoration: none;
 
 }
+
+@media screen and (max-width:700px) {
+    .LoginForm{
+        font-size: 60%;
+        width: 80%;
+    }
+    .LoginTitle {
+        font-size: 1rem;
+    }
+    .inputBox input{
+        font-size: .6rem;
+    }
+    .inputBox input::placeholder{
+        font-size: .6rem;
+    }
+    .LoginBtn{
+        font-size: .7rem; 
+    }
+    .loginfooter{
+        font-size: .7rem;
+    }
+    .inputBox label{
+        font-size: .7rem;
+    }
+}

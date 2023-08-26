@@ -50,13 +50,15 @@
     position: relative;
 }
 
-.titleheading{
+.titleheading {
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
-.titleheading::placeholder{
+
+.titleheading::placeholder {
     font-size: 1.1rem;
 }
+
 .postdDescription {
     /* display: flex;
     flex-direction: column;
@@ -154,11 +156,12 @@
     cursor: pointer;
     position: absolute;
     top: 5px;
-    left: -40px;
+    left: 5px;
     color: red;
     /* display: none; */
-    transition: all .3s;
+    /* transition: all .3s; */
 }
+
 
 .marginB {
     margin-bottom: 35px;
@@ -182,17 +185,19 @@
     color: rgb(79, 79, 79);
     cursor: pointer;
     /* background-color: antiquewhite; */
-    width: 35px;
-    height: 35px;
+    /* width: 35px;
+    height: 35px; */
     margin-top: 3px
-    /* margin-right: auto; */
+        /* margin-right: auto; */
 }
+
 .AddComponentsBtnList .bi-plus-circle-fill {
     width: 20px;
     height: 20px;
 }
 
-.liInput,.liInput::placeholder{
+.liInput,
+.liInput::placeholder {
     color: black;
     overflow: none;
     border: none;
@@ -204,12 +209,14 @@
     width: 100%;
     font-family: Arial, Helvetica, sans-serif;
 }
-.liInput:focus{ 
+
+.liInput:focus {
     border: none;
     outline: none;
     display: block;
 }
-.Ul{
+
+.Ul {
     position: relative;
     margin: 5px 0px;
     align-items: flex-start;
@@ -218,7 +225,7 @@
     display: flex;
 }
 
-.Ul .deleteBtnLi{
+.Ul .deleteBtnLi {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,19 +236,23 @@
     margin-right: 20px;
     margin-top: 5px;
 }
-.Ul .deleteBtnLi .bi-trash3{
+
+.Ul .deleteBtnLi .bi-trash3 {
     width: 12px;
     height: 12px;
 }
 
-.Ul li{
+.Ul li {
     width: 100%;
 }
-.BtnsBox{
+
+.BtnsBox {
     margin-top: 50px;
     width: 70%;
 }
-.btnSaveEdit,.btnShow{
+
+.btnSaveEdit,
+.btnShow {
     margin-right: 10px;
     padding: 3px 25px;
     outline: none;
@@ -252,7 +263,185 @@
 
 }
 
-.btnSaveEdit a,.btnShow a{
-   text-decoration: none;
+.btnSaveEdit a,
+.btnShow a {
+    text-decoration: none;
     color: white;
+}
+
+.mbb-3 {
+    margin-bottom: 25px;
+}
+
+.mbb-2 {
+    margin-bottom: 15px;
+}
+
+.deleteComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 5px;
+    left: 5px;
+    position: absolute;
+    width: 35px;
+    height: 35px;
+    background-color: white;
+    border-radius: 50%;
+
+}
+
+.deletebtnComponent .DelSpan {
+    width: 30px;
+    height: 30px;
+    margin: auto;
+    margin-left: auto;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.btnDelComp {
+
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    border-radius: 50%;
+    background-color: white;
+}
+
+.DelSpan {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+}
+
+.deleteComponent span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (max-width:700px) {
+    .BtnsBox {
+        margin-top: 10px;
+        width: 90%;
+    }
+
+    .btnSaveEdit,
+    .btnShow {
+        margin-right: 10px;
+        padding: 3px 15px;
+        outline: none;
+        border: none;
+        background-color: green;
+        color: white;
+        border-radius: 10px;
+        font-size: .8rem;
+
+    }
+
+    .EditWindow {
+        margin: 10px;
+        display: flex;
+        /* justify-content: center; */
+        /* align-items: center; */
+        flex-direction: column;
+        width: 90%;
+        /* border: 1px solid black; */
+    }
+
+    .EditTitle {
+        font-size: 1.5rem;
+
+    }
+
+    .EditTitle::placeholder {
+        font-size: 1.5rem;
+    }
+
+    .AddComponentsBox {
+        height: 40px;
+        display: flex;
+        align-items: center;
+
+    }
+
+    .AddComponentsBtn .bi-plus-circle-fill {
+        width: 25px;
+        height: 25px;
+    }
+
+    .titleheading {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .titleheading::placeholder {
+        font-size: 1rem;
+    }
+
+    .EditInputDes {
+        font-size: 1rem;
+    }
+
+    .EditInputDes::placeholder {
+
+        font-size: 1rem;
+    }
+
+    .EditTextForDel {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .deleteComponent {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        top: 5px;
+        left: 5px;
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        background-color: white;
+        border-radius: 50%;
+    }
+
+    .bi-trash3 {
+        width: 16px;
+        height: 16px;
+    }
+
+
+    .mbb-3 {
+        margin-bottom: 10px;
+    }
+
+    .mbb-2 {
+        margin-bottom: 5px;
+    }
+
+    .EditComponents {
+        margin-left: 10px;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .marginB {
+        margin-bottom: 10px;
+    }
+
+    .EditList ul {
+        padding-left: 10px;
+    }
 }

@@ -33,7 +33,7 @@ export default function ReadVlog(props) {
                     if (e.type === "text")
                         return <div key={e.key} className='PostText'>{e.dataval}</div>
                     else if (e.type === "img")
-                        return <img src={e.imgBase64} alt="" className='PostImg' />
+                        return <img src={e.imgBase64} key={e.key}  alt="" className='PostImg' />
                     else if (e.type === "title")
                         return <div key={e.key} className="PostTitle mb-2">{e.dataval}</div>
                     else if (e.type === "heading")
@@ -41,7 +41,7 @@ export default function ReadVlog(props) {
                     else if (e.type === "List")
                         return <ul className="PostUl" key={e.key}>
                             {e.dataval.map((ele, liIndex) => {
-                                return <li key={liIndex}>{ele}</li>
+                                return <li key={liIndex} >{ele}</li>
                             })}
                         </ul>
                     else

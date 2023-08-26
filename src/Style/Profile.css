@@ -447,4 +447,16 @@
         font-weight: 500;
         font-size: .9rem;
     }
+    .ProfileList {
+        display: flex;
+        padding: 10px 0px;
+        align-items: center;
+        justify-content: space-evenly;
+        margin: 15px 0px;
+        width: 90%;
+        border-bottom: 1px solid rgb(119, 119, 119);
+    }
+    .ProfileList span {
+       margin: 0;
+    }
 }

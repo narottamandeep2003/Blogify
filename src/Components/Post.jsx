@@ -3,7 +3,7 @@ import PostCard from './PostCard'
 
 export default function Post() {
   return (
-    <div className='SavedBlogs'>
+    <div className='SavedBlogs Blogs'>
       <PostCard></PostCard>
       <PostCard></PostCard>
       <PostCard></PostCard>
