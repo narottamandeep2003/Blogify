@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import Nav from './Nav'
 import Features from './Features';
-import { Link } from 'react-router-dom';
 
 export default function Profile() {
   const [SelectedFeature, SetSelectedFeature] = useState("Saved");
