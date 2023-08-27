@@ -108,9 +108,10 @@
     resize: none;
     color: rgb(28, 28, 28);
     border: none;
-    
+
 }
-.PostHeading{
+
+.PostHeading {
     border-radius: 10px;
     padding: 5px;
     width: 100%;
@@ -127,21 +128,38 @@
     font-size: 1.1rem;
     margin-bottom: 5px;
 }
-.PostImg{
+
+.PostImg {
     width: 100%;
     margin-bottom: 30px;
 }
-.PostUl{
+
+.PostUl {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5px 0px;
     width: 100%;
 }
-.PostUl li{
+
+.PostUl li {
 
     width: 90%;
 }
+
+.footerRead {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.Finish {
+    letter-spacing: 5px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
 @media screen and (max-width:700px) {
     .ReadVlog {
         margin: 0px;
@@ -150,7 +168,7 @@
         align-items: center;
         width: 100%;
     }
-    
+
     .ReadVlogProfile {
         margin-top: 20px;
         height: 70px;
@@ -159,6 +177,7 @@
         align-items: center;
         width: 80%;
     }
+
     .readimgProfile {
         width: 40px;
         height: 40px;
@@ -166,6 +185,7 @@
         object-fit: cover;
         object-position: center;
     }
+
     .Readdarkcol {
         cursor: pointer;
         font-weight: bold;
@@ -173,6 +193,7 @@
         margin: 0;
         color: rgb(22, 22, 22);
     }
+
     .Readlightcol {
         cursor: pointer;
         margin: 0;
@@ -180,23 +201,27 @@
         font-size: .7rem;
         color: rgb(22, 22, 22);
     }
+
     .Readbookmark .bi-bookmark-check-fill {
         margin-left: 10px;
         cursor: pointer;
         width: 17px;
         height: 17px;
     }
+
     .Readbookmarkfollow .bi-person-fill-add {
         margin-left: 10px;
         cursor: pointer;
         width: 17px;
         height: 17px;
     }
+
     .ReadPost {
         width: 90%;
         display: flex;
         flex-direction: column;
     }
+
     .PostTitle {
         border-radius: 10px;
         padding: 0px;
@@ -211,8 +236,9 @@
         resize: none;
         color: rgb(28, 28, 28);
         border: none;
-        
+
     }
+
     .PostText {
         border-radius: 10px;
         padding: 0px;
@@ -229,7 +255,8 @@
         text-align: left;
         margin-bottom: 30px;
     }
-    .PostHeading{
+
+    .PostHeading {
         border-radius: 10px;
         padding: 0px;
         width: 100%;
@@ -246,12 +273,19 @@
         font-size: 1.1rem;
         margin-bottom: 5px;
     }
-    .PostImg{
+
+    .PostImg {
         width: 100%;
         margin-bottom: 15px;
     }
-    .PostUl{
+
+    .PostUl {
         padding-left: 10px;
+    }
+    .Finish {
+        letter-spacing: 5px;
+        font-size: 1.3rem;
+        font-weight: bold;
     }
 
 }

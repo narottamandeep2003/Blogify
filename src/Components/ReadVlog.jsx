@@ -50,6 +50,9 @@ export default function ReadVlog(props) {
                 })
                 }
             </div>
+            <div className="footerRead">
+                <div className="Finish">...</div>
+            </div>
         </div>
     )
 }

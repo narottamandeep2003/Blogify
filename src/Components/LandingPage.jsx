@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
 import Blogs from "./Blogs"
 export default function LandingPage() {
     const [topicsList, settopicsList] = useState([])
-    const [Expand, setExpand] = useState(0)
     const TopicOnClick = (e) => {
         if (e.currentTarget.classList.contains('Topic')) {
             e.currentTarget.classList.remove("Topic")
@@ -14,6 +13,13 @@ export default function LandingPage() {
             e.currentTarget.classList.add("Topic")
         }
     }
+    const ref=useRef(null)
+    const scroll = (scrollOffset) => {
+        ref.current.scrollLeft += scrollOffset;
+        if(ref.current.scrollLeft===0){
+
+        }
+    };
     useEffect(() => {
         settopicsList(["Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion"])
     }, [])
@@ -27,26 +33,26 @@ export default function LandingPage() {
                         </svg>
                     </button>
                 </div>
+
                 <div className="topic">
-                    {/* <span id="Top"  >Top Blog</span> */}
+
                     <div className="boxTopic">
-                        <div className="topicInner">
-
-                            <span id="addTopic" onClick={() => {
-                                setExpand(!Expand)
-                            }}>Topic</span>
+                        <span className='leftBtnTopic'  onClick={() => scroll(-30)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                                <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
+                            </svg>
+                        </span>
+                        <div className="ScrollTipicBox" ref={ref}>
+                            {topicsList.map((ele, index) => {
+                                return <span key={index} onClick={TopicOnClick} className='topics Topic'>{ele}</span>
+                            })}
                         </div>
-                        <div className={`HomeTopicBox  ${Expand ? "" : "hideTopicsBox"}`} id="topics">
-                            {
-                                topicsList.map((element, index) => {
-                                    return (<span className='Topic' key={index} onClick={TopicOnClick}>{element}</span>)
-                                })
-                            }
-                        </div>
-
-
+                        <span className='rightBtnTopic' onClick={() => scroll(30)}>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                                <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z" />
+                            </svg>
+                        </span>
                     </div>
-                    <span id="ApplyTopic">Apply</span>
 
                 </div>
 

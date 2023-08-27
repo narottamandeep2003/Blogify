@@ -231,18 +231,26 @@ nav {
 
 .searchBox button {
     display: flex;
-    margin: 0px 10px;
-    width: 32px;
-    height: 32px;
-    background-color: black;
+    margin: 0px 15px;
+    /* width: 32px;
+    height: 32px; */
+    /* background-color: black; */
     border-radius: 50%;
+    margin-left: 20px;
     outline: none;
     border: none;
-    color: white;
+   
     justify-content: center;
     align-items: center;
 }
-
+.SearchBtn{
+    background:none;
+}
+.bi-search{
+    color:  rgb(64, 64, 64);
+    width: 25px;
+    height: 25px;
+}
 .topic {
     justify-content: center;
     align-items: center;
@@ -289,41 +297,19 @@ nav {
     color: rgb(72, 72, 72);
 }
 
-.topics {
-    -webkit-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    position: relative;
-    display: flex;
-    /* background-color: antiquewhite; */
-    align-items: center;
-    margin: 0px 10px;
-    max-width: 500px;
-    overflow: hidden;
-    /* border-right:2px solid black; */
+
+
+.topic{
+    width: 50%;
 }
 
-.HomeTopicBox {
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: start; */
-    /* align-items: flex-start; */
-    padding: 5px;
-    position: absolute;
-    z-index: 100;
-    top: 50px;
-    width: 30vw;
-    max-height: 300px;
-    border-radius: 10px;
-    background-color: rgb(231, 231, 231);
-}
-
-.hideTopicsBox {
-    display: none;
-}
 
 .boxTopic {
-    position: relative;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .HomeTopicBox span {
@@ -342,22 +328,51 @@ nav {
     height: 40px;
 }
 
-/* .topics span {
+.leftBtnTopic,.rightBtnTopic{
+    z-index: 10;
+   
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    /* border-radius: 40%; */
+    color: rgb(52, 52, 52);
+}
+.leftBtnTopic{
+    box-shadow: 4px 0px 5px rgb(255, 255, 255);
+}
+.rightBtnTopic{
+    box-shadow: -4px 0px 5px rgb(255, 255, 255);
+}
+.leftBtnTopic svg,.rightBtnTopic svg {
+    width: 25px;
+    height: 25px;
+}
+.ScrollTipicBox{
+
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width:85%;
+    overflow-x: hidden;
+}
+.topics {
     cursor: pointer;
     margin: 0px 2px;
-    
-    font-size: .9rem;
+    font-size: .8rem;
     border-radius: 25px;
-    padding: 5px 15px;
+    padding: 5px 10px;
 
-} */
+}
 
 .CTopic{
     background-color: rgb(215, 215, 215);
     color: black;
 }
 .Topic {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(186, 186, 186);
     color: black;
 }
 
@@ -371,6 +386,7 @@ nav {
 
 .Blogs {
     margin-top: 100px;
+    margin-bottom: 50px;
     width: 80vw;
     /* height: 100vh; */
     /* border: 2px solid rebeccapurple; */
@@ -718,7 +734,7 @@ nav {
         margin: 0px 10px;
         width: 32px;
         height: 32px;
-        background-color: black;
+        /* background-color: black; */
         border-radius: 50%;
         outline: none;
         border: none;
@@ -804,9 +820,10 @@ nav {
         flex-direction: column;
         align-items: center;
         grid-row-gap: 0px;
+        margin-bottom: 0px;
     }
     .blog{
-        margin: 20px 0px;
+        margin-bottom: 70px;
         padding-bottom: 10px;
     }
     .card {
@@ -841,5 +858,8 @@ nav {
     .CardDes {
 
         font-size: .85rem;
+    }
+    .SearchBtn{
+        background:none;
     }
 }
