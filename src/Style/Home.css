@@ -372,7 +372,7 @@ nav {
     color: black;
 }
 .Topic {
-    background-color: rgb(186, 186, 186);
+    background-color: rgb(220, 220, 220);
     color: black;
 }
 
@@ -632,7 +632,7 @@ nav {
     }
 
     #Profile {
-        margin-right: 50px;
+        margin-right: 20px;
     }
 
     .WriteButton {
@@ -814,7 +814,7 @@ nav {
     /* cards */
 
     .Blogs {
-        margin-top: 30px;
+        margin-top: 50px;
         width: 100vw;
         display: flex;
         flex-direction: column;
