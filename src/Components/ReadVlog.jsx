@@ -28,7 +28,7 @@ export default function ReadVlog(props) {
                     </div>
                 </div>
             </div>
-            <div className="ReadPost mt-2 mb-5">
+            <div className="ReadPost mt-2">
                 {location.state.data.map((e, index) => {
                     if (e.type === "text")
                         return <div key={e.key} className='PostText'>{e.dataval}</div>
