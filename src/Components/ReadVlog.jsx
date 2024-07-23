@@ -1,18 +1,24 @@
 import React from 'react'
-import { useLocation } from 'react-router-dom';
+import { useLocation, useParams } from 'react-router-dom';
 import Nav from './Nav';
-
+import { blogList } from './blogList';
 export default function ReadVlog(props) {
+    console.log(props)
     const location = useLocation();
     console.log("props", location.state)
+    let x=useParams();
+    let blog=blogList.find((blog)=>{
+        return blog.id===Number.parseInt(x.id)
+    })
+    console.log(blog)
     return (
         <div className='ReadVlog'>
             <Nav></Nav>
             <div className="ReadVlogProfile">
-                <img src="./imgProfile.jpg" alt="" className='readimgProfile' />
+                <img src={blog.profileImg} alt="" className='readimgProfile' />
                 <div className="ReadProfileData">
-                    <span className='Readdarkcol'>Mandeep singh</span>
-                    <span className='Readlightcol'>24 Aug 2023</span>
+                    <span className='Readdarkcol'>{blog.profileName}</span>
+                    <span className='Readlightcol'>{blog.time}</span>
                 </div>
                 <div className='ReadIcon'>
                     <div className='Readbookmark'>
@@ -29,7 +35,7 @@ export default function ReadVlog(props) {
                 </div>
             </div>
             <div className="ReadPost mt-2">
-                {location.state.data.map((e, index) => {
+                {blog?.data?.map((e, index) => {
                     if (e.type === "text")
                         return <div key={e.key} className='PostText'>{e.dataval}</div>
                     else if (e.type === "img")

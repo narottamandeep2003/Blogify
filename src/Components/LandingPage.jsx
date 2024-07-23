@@ -13,15 +13,37 @@ export default function LandingPage() {
             e.currentTarget.classList.add("Topic")
         }
     }
-    const ref=useRef(null)
+    const ref = useRef(null)
     const scroll = (scrollOffset) => {
         ref.current.scrollLeft += scrollOffset;
-        if(ref.current.scrollLeft===0){
+        if (ref.current.scrollLeft === 0) {
 
         }
     };
     useEffect(() => {
-        settopicsList(["Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion", "Following", "Java", "Dance", "Fashion"])
+        settopicsList([
+            "Following",
+            "Rotation",
+            "Soil",
+            "Irrigation",
+            "Organic",
+            "Precision",
+            "Agroforestry",
+            "Sustainable",
+            "Hydroponics",
+            "Aquaponics",
+            "Pest",
+            "Machinery",
+            "Biotechnology",
+            "Husbandry",
+            "Dairy",
+            "Economics",
+            "Greenhouse",
+            "Vertical",
+            "Agroecology",
+            "Permaculture",
+            "GMO"
+        ])
     }, [])
     return (
         <div className='LandingPage'>
@@ -37,14 +59,14 @@ export default function LandingPage() {
                 <div className="topic">
 
                     <div className="boxTopic">
-                        <span className='leftBtnTopic'  onClick={() => scroll(-30)}>
+                        <span className='leftBtnTopic' onClick={() => scroll(-30)}>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-arrow-left-circle" viewBox="0 0 16 16">
                                 <path fillRule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5H11.5z" />
                             </svg>
                         </span>
                         <div className="ScrollTipicBox" ref={ref}>
                             {topicsList.map((ele, index) => {
-                                return <span key={index} onClick={TopicOnClick} className='topics Topic'>{ele}</span>
+                                return <span key={index} onClick={TopicOnClick} className='topics Topic' >{ele}</span>
                             })}
                         </div>
                         <span className='rightBtnTopic' onClick={() => scroll(30)}>

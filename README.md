@@ -1,5 +1,13 @@
 # Getting Started with Create React App
 
+![alt text](image1.png)
+
+![alt text](image2.png)
+
+![alt text](image3.png)
+
+![alt text](image4.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts

@@ -1,16 +1,20 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
-export default function BlogCard() {
+export default function BlogCard({ data }) {
+    let navigate=useNavigate()
     return (
-        <div>
+        <div onClick={()=>{
+            navigate(`/ReadVlog/${data.id}`)
+        }}>
             <div className="blog">
                 <div className="card">
-                    <img src="./coding.jpg" alt="" className='cardimg' />
+                    <img src={data.blogImg} alt="" className='cardimg' />
                     <div className="CardProfileBox">
-                        <img src="./imgProfile.jpg" alt="" className='cardProgileimg' />
+                        <img src={data.profileImg} alt="" className='cardProgileimg' />
                         <div className="NameDate">
-                            <span className='CardName'>Narotta</span>
-                            <span className='CardDate'>Mar 2</span>
+                            <span className='CardName'>{data.profileName}</span>
+                            <span className='CardDate'>{data.time}</span>
                         </div>
                         <div className="followIcon">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-person-fill-add" viewBox="0 0 16 16">
@@ -19,12 +23,12 @@ export default function BlogCard() {
                             </svg>
                         </div>
                     </div>
-                    <h3 className='CardTitle'>How to Reuse Micro Frontends</h3>
+                    <h3 className='CardTitle'>{data.title}</h3>
                     <p className='CardDes'>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta inventore esse, dolore unde laboriosam quo nulla optio iusto corrupti illo delectus porro aliquid ...
+                        {data.desc}
                     </p>
                     <div className="cardFooter">
-                        <span className='CardTopic CTopic'>Dynamic programing</span>
+                        <span className='CardTopic CTopic'>{data.keyword}</span>
                         <div>
                             <div className="CardLike like">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-heart-fill" viewBox="0 0 16 16">

@@ -23,7 +23,8 @@ function App() {
           <Route path="/LogIn" element={<Login></Login>}></Route>
           <Route path="/SignUp" element={<SignUp></SignUp>}></Route>
           <Route path="/Edit" element={<EditVlog></EditVlog>}></Route>
-          <Route path="/ReadVlog" element={<ReadVlog></ReadVlog>}></Route>
+          <Route path="/ReadVlog/:id" element={<ReadVlog></ReadVlog>}></Route>
+          {/* <Route path="/ReadVlog" element={<ReadVlog></ReadVlog>}></Route> */}
           <Route path="*" element={<Error></Error>}></Route>
         </Routes>
       </BrowserRouter>
